@@ -1,0 +1,241 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kalam', cursive;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+    font-size: 20pt;
+}
+
+.custom_nav {
+    background-color: rgba(193,241,0,1)!important;
+    color: rgba(0,0,0,1)!important;
+}
+
+.readMore {
+  background-color: rgba(193, 241, 0,1);
+  color: rgba(0,0,0,1);
+}
+
+.readMore:hover, .readMore:focus {
+  transform: scale(1.1);
+  /* font-weight: bold; */
+  background-color: rgba(240,128,127,1);
+}
+
+.componentheader, .latest {
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.latestMedia .latest {
+  font-size: 22pt;
+  margin-top: 1em;
+}
+
+/* Subscribe Section */ 
+
+#mc_embed_signup {
+  border-top: 5px dotted rgba(211,19,112,1);
+  padding-bottom: 2em;
+  margin-top: 2em;
+}
+
+/* Blog Posts */
+
+.quote {
+  font-family: 'Kalam', cursive;
+  font-size: 24pt;
+  margin: 1em auto;
+}
+
+.blogTitle {
+  font-weight: bold;
+}
+
+.blog > p {
+  padding-bottom: 1em;
+}
+
+.latestMedia .blogTitle {
+  font-size: 18pt;
+  margin-top: 0;
+}
+
+.blogDate {
+  margin-bottom: 1.5em;
+}
+
+.blogImages {
+  width: 80%;
+  max-width: 992px;
+  margin: 1em auto 2em auto;
+}
+
+.blogImagesSm {
+  width: 80%;
+  max-width: 500px;
+  margin: 1em auto 2em auto;
+}
+
+.postBody {
+  border-top: 5px dotted rgba(211,19,112,1);
+  padding-bottom: 2em;
+}
+
+/* table formatting */ 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: .5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  table {
+    font-size: .75em;
+  }
+}
+
+th, td {
+  border: 1px solid rgba(0,0,0,.5);
+  text-align: center;
+  padding: 1em;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(211,19,112,.1);
+}
+
+tr:nth-child(1) {
+  background-color: rgba(193,241,0,1);
+}
+
+
+/* Video Embedding */
+
+.video {
+  border-top: 2px dotted rgba(211,19,112,.5);
+}
+
+.youtubeEmbed {
+  padding-bottom: 2em;
+}
+
+
+@media screen and (max-width: 576px) {
+  .youtubeEmbed iframe {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .youtubeEmbed.main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .youtubeEmbed.main iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .youtubeEmbed {
+    padding-top: 2em;
+  }
+}
+
+.latestBlog .blogSummary {
+  margin-bottom: 1em;
+}
+
+/* Modal Styling */ 
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: table;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .modal-container {
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+  }
+
+  .modal-container img {
+      width: 95%;
+  }
+  
+  .modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+  
+  .modal-body {
+    margin: 20px 0;
+  }
+  
+  .modal-default-button {
+    float: right;
+  }
+  
+  /*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+  
+  .modal-enter {
+    opacity: 0;
+  }
+  
+  .modal-leave-active {
+    opacity: 0;
+  }
+  
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
